@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Askit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://bootswatch.com/5/united/bootstrap.css">
+        <link rel="stylesheet" href="https://bootswatch.com/_vendor/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://bootswatch.com/_vendor/prismjs/themes/prism-okaidia.css">
+        <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23019901-1"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script> -->
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          
+          gtag('config', 'UA-23019901-1');
+        </script>
+    </head>
+    <body>
+        <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+          <div class="container">
+            <a href="../" class="navbar-brand">Ask it!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#latest">LATEST</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="#most_popular">MOST POPULAR</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#your_account">YOUR ACCOUNTS</a>
+                  <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#change_password">CHANGE PASSWORD</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#log_out">LOG OUT</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#cookie_jar">COOKIE JAR</a>
+                  </div>
+                </li> 
+              </ul>
+            </div>
+            {% comment %}
+            <div class="sidebar-search">
+                <form method="GET" action="{% url 'search' %}">
+
+                </form>
+            </div>
+            {% endcomment %}
+          </div>
+        </div>
+        <div id="content" class="text-center">
+            {% block content %}{% endblock %}
+        </div>
+
+    </body>
+    <footer>
+        <a href="#top" >Back to top</a>
+    </footer>
+</html>
