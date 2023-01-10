@@ -1,0 +1,311 @@
+<html>
+  {% load static %}
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Askit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://bootswatch.com/5/united/bootstrap.css">
+    <link rel="stylesheet" href="https://bootswatch.com/_vendor/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://bootswatch.com/_vendor/prismjs/themes/prism-okaidia.css">
+    <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23019901-1"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script> -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'UA-23019901-1');
+      </script>
+  </head>
+  <body>
+  <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+    <div class="container">
+      <a href="../" class="navbar-brand">Ask it!</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#latest">LATEST</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="#most_popular">MOST POPULAR</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#your_account">YOUR ACCOUNTS</a>
+            <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#change_password">CHANGE PASSWORD</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#log_out">LOG OUT</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#cookie_jar">COOKIE JAR</a>
+            </div>
+          </li> 
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-lg">
+    <div class="row justify-content-end">
+      <div class="col-3">
+        <i class="bi bi-question-circle-fill"></i>
+        <a href="new_question"><button class="btn btn-primary">+NEW QUESTION</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- main image & intro text -->
+  <section id="intro">
+    <div class="container-lg">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-5 text-center text-md-start">
+          <h1>
+            <div class="display-2">Black Belt</div>
+            <div class="display-5 text-muted">Your Coding Skills</div>
+          </h1>
+          <p class="lead text-muted">Lorem ipsum dolor sit amet.</p>
+          <a href="#pricing" class="btn btn-secondary btn-lg">Buy now</a>
+          <!-- open sidebar / offcanvas -->
+            <a href="#sidebar" class="d-block" data-bs-toggle="offcanvas" aria-controls="sidebar">
+              Explore my other books
+            </a>
+        </div>
+        <div class="col-md-5 text-center d-none d-md-block">
+          <img class="img-fluid" src="/static/sports.abc245d6162d.png" alt="ebook cover">
+        </div>
+      </div>
+    </div>
+  </section> 
+
+  <!-- main page -->
+  <section id="latest" class="bg-secondary m-5">
+   <div class="container-md">
+    <div class="text-center">
+      <h3>Price</h3>
+      <p>this is the price</p>
+    </div>
+    <div class="row my-5 align-items-center justify-content-center g-0">
+      <div class="col-12 col-md-8 col-lg-4">
+        <div class="card border-0">
+          <div class="card-body text-center">
+            <p class="card-title">Card Edition</p>
+            <p class="display-6 text-warning fw-italic">$7.99</p>
+            <p class="card-text text-muted d-none d-lg-block">Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn btn-outline-success">button</a> 
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-10 col-lg-2">
+        <div class="card border-2">
+          <div class="card-header text-center text-primary">Most Popular</div>
+          <div class="card-body text-center">
+            <p class="card-title">Card Edition2</p>
+            <p class="display-6 text-warning fw-italic">$8.99</p>
+            <p class="card-text text-muted d-none d-lg-block">Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn btn-outline-success">button</a> 
+          </div>
+        </div>
+      </div> 
+
+      <div class="col-12 col-md-8 col-lg-4">
+        <div class="card border-0">
+          <div class="card-body text-center">
+            <p class="card-title">Card Edition3</p>
+            <p class="display-6 text-warning fw-italic">$9.99</p>
+            <p class="card-text text-muted d-none d-lg-block">Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn btn-outline-success">button</a> 
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+    
+  <!-- book list -->
+  <section id="reviews" class="bg-light">
+    <div class="container-sm">
+      <div class="text-center">
+        <h2><i class="bi bi-award-fill"></i>Book Reviews<i class="bi bi-award-fill"></i></h2>
+        <p class="lead">What readers said about the book</p>
+      </div>
+      <div class="row justify-content-center my-1">
+        <div class="col-lg-8">
+          <div class="list-group">
+            <div class="list-group-item">
+              <h5 class="mb-1">A favorite book</h5>
+              <p class="mb-1">Lorem ipsum dolor sit.</p>
+              <small>review by AJ</small>
+            </div>
+            <div class="list-group-item">
+              <h5 class="mb-1">A favorite book</h5>
+              <p class="mb-1">Lorem ipsum dolor sit.</p>
+              <small>review by AJ</small>
+            </div>
+            <div class="list-group-item">
+              <h5 class="mb-1">A favorite book</h5>
+              <p class="mb-1">Lorem ipsum dolor sit.</p>
+              <small>review by AJ</small>
+            </div>
+            <div class="list-group-item">
+              <div class="pb-1">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <h5 class="mb-1">A favorite book</h5>
+              <p class="mb-1">Lorem ipsum dolor sit.</p>
+              <small>review by AJ</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- test form  -->
+  <section id="most_popular">
+    <div class="container-lg">
+      <div class="text-center">
+        <h2>most popular</h2>
+        <p class="lead">this is the most popular book</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <form>
+            <label for="email" class="form-label">email address</label>
+            <div class="row">
+              <div class="input-group col-sm-6">
+                <input type="email" class="form-control" id="email">
+                <span class="input-group-text">@gmail.com</span>
+                <!-- tooltip -->
+                <span class="input-group-text">
+                  <span class="first_javascript_function" data-bs-placement="right" title="please enter your email">
+                    <i class="bi bi-exclamation-diamond-fill"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+
+            <label for="name" class="form-label">name</label>
+            <div class="input-group">
+              <span class="input-group-text first_javascript_function" data-bs-placement="left" title="enter your name">
+                <i class="bi bi-person-circle text-muted"></i>
+              </span>
+              <span class="input-group-text">First and last name</span>
+              <input type="text" aria-label="First name" class="form-control">
+              <input type="text" aria-label="Last name" class="form-control">
+              <span class="input-group-text first_javascript_function" data-bs-placement="right" title="enter your name">
+                <i class="bi bi-person-circle"></i>
+              </span>
+            </div>
+
+            <div class="input-group">
+              <span class="input-group-text">
+                <label for="topic" class="form-label">what you wanna ask</label>
+              </span>
+              <select name="topic" id="topic" class="form-select">
+                <option selected>Choose below</option>
+                <option value="price" class="price">price inquiry</option>
+                <option value="date" class="date">date inquiry</option>
+                <option value="other" class="other">other inquiry</option>
+              </select>
+              <span class="input-group-text"></span>
+            </div>
+
+            <div class="form-floating">
+              <textarea id="question" class="form-control" height="75"></textarea>
+              <label for="question">your question</label>
+            </div>
+
+            <div class="button text-center">
+              <button type="button" class="btn btn-primary">submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- get updates / modal trigger -->
+  <section class="bg-light">
+    <div class="container">
+      <div class="text-center">
+        <h2>Stay in the Loop</h2>
+        <p class="lead">Get the latest updates as they happen</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+            Register for Updates
+          </button>
+        </div>   
+      </div>
+    </div>
+  </section>  
+  
+  <!-- modal itself -->
+  <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal-title">Get the Latest Updates</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <label for="modal-email" class="form-label">Your email address:</label>
+          <input type="email" class="form-control" id="modal-email" placeholder="e.g. mario@example.com">      
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary">submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- offcanvas -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sidebar-label">My other books</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <!-- dropdown -->
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">
+          Choose a book title
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+          <li><a href="#" class="dropdown-item">React</a></li>
+          <li><a href="#" class="dropdown-item">Vue.js</a></li>
+          <li><a href="#" class="dropdown-item">Next.js</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+      <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://bootswatch.com/_vendor/prismjs/prism.js"></script>
+      <script src="https://bootswatch.com/_assets/js/custom.js"></script>
+      <script>
+        const tooltips = document.querySelectorAll('.first_javascript_function')
+        tooltips.forEach(tooltip => {
+          new bootstrap.Tooltip(tooltip)
+        })
+      </script>
+  </body> 
+  <footer>
+    <a href="#top" >Back to top</a>
+  </footer> 
+      
+</html> 
