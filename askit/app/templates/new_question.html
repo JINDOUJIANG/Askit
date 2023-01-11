@@ -2,8 +2,13 @@
 
 {% block content %}
 
+<<<<<<< HEAD
 <form action="main_page" method="get" novalidate>
     
+=======
+<form action="main_page" method="post">
+    {% csrf_token %}
+>>>>>>> 6801346969eeb562ef0a36838fbcad0fea3866e6
     {{ new_question_form.as_p }}
     <input type="submit" value="ASK QUESTION"> 
 </form>

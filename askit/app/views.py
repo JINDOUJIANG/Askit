@@ -7,7 +7,6 @@ def base_page(request):
   return render(request, "base_page.html")
 
 def main_page(request):
-
   return render(request, "main_page.html")
 
 def test(request):
