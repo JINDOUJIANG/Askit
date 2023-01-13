@@ -1,4 +1,4 @@
-# this is a coment
+# this is a new comment
 from . import views
 from django.urls import path
 

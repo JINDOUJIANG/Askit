@@ -51,7 +51,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'askit.urls'
-
+CSRF_TRUSTED_ORIGINS = ['https://*.gitpod.io/']
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
