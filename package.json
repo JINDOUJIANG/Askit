@@ -1,0 +1,26 @@
+{
+  "name": "askit",
+  "version": "1.0.0",
+  "description": "This is Jindou's Askit Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JINDOUJIANG/Askit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JINDOUJIANG/Askit/issues"
+  },
+  "homepage": "https://github.com/JINDOUJIANG/Askit#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "stylelint": "^14.15.0",
+    "stylelint-config-standard": "^29.0.0"
+  }
+}

@@ -4,8 +4,13 @@
 
 <form action="main_page" method="POST">
     {% csrf_token %}
-    <input type="text">
+    {{ new_question_form.as_p }}
     <input type="submit" value="ASK QUESTION"> 
 </form>
+
+
+{% comment %}
+    next step is going to check if the database work for my built sytem or app. Go to create models and datas and test them out in my shell.
+{% endcomment %}
 
 {% endblock %}

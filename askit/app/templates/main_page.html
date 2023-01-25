@@ -24,6 +24,9 @@
   <body>
   <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
     <div class="container">
+      {% comment %}
+        need to fix this url
+      {% endcomment%}
       <a href="../" class="navbar-brand">Ask it!</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -88,6 +91,16 @@
       
     </div>
   </section>
+  
+  <!-- test for new_question -->
+  <section class="test-new_question"> 
+    <div class="text-center">
+      <p>The New_question should be generated Below</p>
+      <p>{{new_question_form.your_question}}</p>
+      <p>{{new_question_form.body}}</p>
+    </div>
+  </section>
+
 
   <!-- main page -->
   <section id="latest" class="bg-secondary m-5">
