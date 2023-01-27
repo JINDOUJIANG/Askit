@@ -4,7 +4,8 @@
 
 <form action="main_page" method="POST">
     {% csrf_token %}
-    {{ new_question_form.as_p }}
+    <input type="text" id="your_question" name="your_question" placeholder="Your question"><br>
+    <input type="text" id="body" name="body" placeholder="Body(optional)"><br>
     <input type="submit" value="ASK QUESTION"> 
 </form>
 

@@ -6,9 +6,7 @@ from django.urls import path
 app_name = 'askit'
 
 urlpatterns = [
-    path('input_name_form', views.input_name_form, name='input_name_form'),
     path('main_page', views.main_page, name='main_page'),
-    path('test', views.test, name='test'),
     path('new_question', views.new_question, name='new_question'),
     path('base_page', views.base_page, name='base_page'),
     path('new_comment', views.new_comment, name='new_comment'),

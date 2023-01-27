@@ -47,34 +47,11 @@
                 </li> 
               </ul>
             </div>
-
-            {% comment %}
-              <div class="sidebar-search">
-                  <form method="GET" action="{% url 'search' %}">
-
-                  </form>
-              </div>
-            {% endcomment %}
-
           </div>
         </div>
         <div id="content" class="text-center">
             {% block content %}{% endblock %}
         </div>
-
-        {% comment %}
-          this is for testing input name
-          <div class="test-input-name">
-            <p>{{p.first_name}} + {{p.last_name}}</p>
-          </div>
-        {% endcomment %}
-
-        {% comment %}
-          this is for testing new_question input
-          <div class="test-new_question-input">
-            <p>{{QuestionForm.question}}</p>
-          </div>
-        {% endcomment %}
 
     </body>
     <footer>
