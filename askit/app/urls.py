@@ -11,6 +11,7 @@ urlpatterns = [
     path('test', views.test, name='test'),
     path('new_question', views.new_question, name='new_question'),
     path('base_page', views.base_page, name='base_page'),
+    path('new_comment', views.new_comment, name='new_comment'),
     # path('search', views.search, name='search'),
 
 ]

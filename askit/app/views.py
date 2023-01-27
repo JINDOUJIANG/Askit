@@ -30,5 +30,8 @@ def new_question(request):
   print('The POST data is:', request.POST)
   return render(request, "new_question.html", context)
 
+def new_comment(request):
+  
+  return render(request, "new_comment.html")
 # def search(request):
 #   latest_search = 
