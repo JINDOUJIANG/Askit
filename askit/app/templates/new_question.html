@@ -4,8 +4,8 @@
 
 <form action="main_page" method="POST">
     {% csrf_token %}
-    <input type="text" id="your_question" name="your_question" placeholder="Your question"><br>
-    <input type="text" id="body" name="body" placeholder="Body(optional)"><br>
+    <textarea rows="1" cols="50" id="your_question" name="your_question" placeholder="Your question"></textarea><br>
+    <textarea rows="4" cols="50" id="body" name="body" placeholder="Body(optional)"></textarea><br>
     <input type="submit" value="ASK QUESTION"> 
 </form>
 
