@@ -3,6 +3,9 @@ from django.shortcuts import render
 from django.http import HttpResponse, HttpResponseRedirect
 from app.models import Question
 
+def css_testpage(request):
+  return render(request, "css_testpage.html")
+
 def base_page(request):
   return render(request, "base_page.html")
 
