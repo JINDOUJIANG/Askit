@@ -14,12 +14,34 @@
     </div>
   </div>
   
+  {% comment %}
+    question variable is not being taken,
+    it's displaying value after 1-31-2023,
+    the next step is to display all data from Question model, not just display the last one
+    notes 2-2-2023: above complished, next step is to display information in post's way
+  {% endcomment %}
   <section id="post">
-    <div class="card">
-      {% comment %}question variable is not being taken{% endcomment %}
-      <h3>{{ question.body }}</h3>
-    </div>
+   
+      
+      {% for question in questions %}
+      <div class="card">
+        {{question}}
+      </div>
+      {% endfor %}
+
+      
+   
   </section>
+  {% comment %}
+    Notes: it's not display the right bootstrap like samples, consider using the exact same bootstrap to see if it works.
+    the code below may be solution to print out post created time:
+    <div class="box">
+      {{question}}
+      <span class="is-small has-text-grey-light">
+        <!-- {{ question.created_at }} by {{ question.user.username }} -->
+      </span>
+    </div>
+  {% endcomment %}
 
 {% endblock %}
 

@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<form action="main_page" method="POST">
+<form action="question_save" method="post">
     {% csrf_token %}
     <textarea rows="1" cols="50" id="your_question" name="your_question" placeholder="Your question"></textarea><br>
     <textarea rows="4" cols="50" id="body" name="body" placeholder="Body(optional)"></textarea><br>

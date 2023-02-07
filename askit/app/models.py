@@ -5,4 +5,4 @@ class Question(models.Model):
     body = models.CharField(max_length=500)
 
     def __str__(self):
-        return self.question + '' + self.body
+        return self.question + '' + self.body 
